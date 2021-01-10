@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "497564391607",
+    "project_id": "cindh-ui",
+    "storage_bucket": "cindh-ui.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:497564391607:android:94bc7e143d669dd78b5532",
+        "android_client_info": {
+          "package_name": "aymaneflutter.cindh_ui"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "497564391607-i0ipore1kd5ptesd93f260rsqa9td9c0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQq_6wzY0PrNU3YhERFimQEWIMRbcG_5I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "497564391607-i0ipore1kd5ptesd93f260rsqa9td9c0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

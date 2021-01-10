@@ -1,0 +1,81 @@
+
+import 'package:cindh_ui/Assoc/AddActivity.dart';
+import 'package:cindh_ui/Assoc/AssocLogin.dart';
+import 'package:cindh_ui/Assoc/DemandesAssoc.dart';
+import 'package:cindh_ui/Assoc/WallAssoc.dart';
+import 'package:cindh_ui/UserType.dart';
+import 'package:cindh_ui/components/ButtonMain.dart';
+import 'package:cindh_ui/components/InformationsBar.dart';
+import 'package:fancy_bottom_navigation/fancy_bottom_navigation.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter/painting.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+
+
+class AssocProfile extends StatefulWidget {
+
+  @override
+  _AssocProfileState createState() => _AssocProfileState();
+}
+
+class _AssocProfileState extends State<AssocProfile> {
+  int _body = 2;
+  Widget bodyFunction(BuildContext context) {
+    double width = MediaQuery.of(context).size.width;
+    double height = MediaQuery.of(context).size.height;
+    switch (_body) {
+      case 0:
+        return WallAssoc();
+        break;
+      case 1:
+        return AddActivity();
+        break;
+      case 2:
+        return ProfileAssoc(width:width,height:height);
+        break;
+      default:
+        return ProfileAssoc(width:width,height:height);
+        break;
+    }
+  }
+  @override
+  Widget build(BuildContext context) {
+    double width = MediaQuery.of(context).size.width;
+    double height = MediaQuery.of(context).size.height;
+    return Scaffold(
+        body: bodyFunction(context),
+      bottomNavigationBar: FancyBottomNavigation(
+
+        circleColor: Colors.blueAccent,
+        textColor: Colors.white,
+        initialSelection: 2,
+        inactiveIconColor: Colors.black,
+        tabs: [
+          TabData(iconData: Icons.search, title: 'الحائط'),
+          TabData(iconData: Icons.add_box, title: "إضافة نشاط"),
+          TabData(iconData: Icons.person, title: "الحساب الشخصي")
+        ],
+        onTabChangedListener: (index) {
+          setState(() {
+            _body = index;
+          });
+        },
+      )
+    );
+  }
+}
+
+class ProfileAssoc extends StatelessWidget {
+  const ProfileAssoc({
+    Key key,
+    @  this.height,
+    @  this.width,
+  }) : super(key: key);
+
+  final double height;
+  final double width;
+
+  @override
+  Widget build(BuildContext context) {
+    return SingleChil
