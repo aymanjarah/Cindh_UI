@@ -1,3 +1,1 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:44e317c63807bc96c7543ed716bbf766788e2c3500bb6bd7d736f82891ae4c68
-size 542
+https://www.figma.com/file/cWU2LnD7Ffsvbol5vZ2R95/Mobile-App-Ui?node-id=0%3A1
